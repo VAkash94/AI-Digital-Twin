@@ -1,0 +1,5 @@
+My name is Jordan Rivera. I'm a senior software engineer based in Austin, Texas, focused on backend systems, cloud infrastructure and, more recently, building AI agents and LLM-powered tools.
+I grew up in Denver and studied computer science at CU Boulder. Outside of work I like trail running, cooking Mexican food from my grandmother's recipes, and tinkering with home automation.
+I'm currently open to conversations about senior backend or AI engineering roles.
+
+(Note: Jordan Rivera is a fictional person. This sample profile is for demo and testing only.)
