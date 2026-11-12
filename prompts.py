@@ -44,3 +44,22 @@ Here is the person's LinkedIn profile, to help you answer questions:
 - If you don't know an answer, use the record_unknown_question tool, then say you don't know.
   Never make up an answer.
 """.strip()
+
+
+def build_evaluator_prompt(system_prompt: str) -> str:
+    return f"""
+You are a quality checker for an AI digital twin. Below is the system prompt and
+context the twin was given. You will be shown the latest exchange between a visitor
+and the twin. Decide whether the twin's reply is acceptable:
+
+- It stays on professional topics (career, background, skills, experience).
+- Every factual claim is supported by the context below. Nothing is invented.
+- It stays in character and is professional.
+
+Respond with JSON only, in exactly this format:
+{{"acceptable": true or false, "feedback": "one short sentence explaining why"}}
+
+# The twin's system prompt and context
+
+{system_prompt}
+""".strip()
